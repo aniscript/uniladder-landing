@@ -6,6 +6,7 @@ import {
   FaLinkedin,
   FaEnvelope,
   FaMapMarkerAlt,
+  FaPhone,
 } from "react-icons/fa";
 import Header from "../components/Header";
 
@@ -32,10 +33,24 @@ const Appointment = () => {
             <div className="contact-desc">
               <div className="contact-list flex items-center">
                 <FaEnvelope size={48} color="#00aff0" className="mr-4" />
-                {/* <h2>Email</h2> */}
+
                 <a href="mailto:info@uniladder.co.uk">
-                  <p>info@uniladder.co.uk</p>
+                  <p>receptionuniladder@gmail.com</p>
                 </a>
+              </div>
+              <div className="contact-list flex items-center">
+                <FaPhone size={48} color="#00aff0" className="mr-4" />
+                <div>
+                  <a href="tel:+442080042071">
+                    <p>+442080042071</p>
+                  </a>
+                  <a href="tel:+9779808428046">
+                    <p>+9779808428046</p>
+                  </a>
+                  <a href="tel:+977015318783">
+                    <p>+977015318783</p>
+                  </a>
+                </div>
               </div>
               <div className="contact-list flex items-center">
                 <FaMapMarkerAlt size={48} color="#00aff0" className="mr-4" />
