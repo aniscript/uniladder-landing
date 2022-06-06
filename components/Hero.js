@@ -53,11 +53,9 @@ const Hero = () => {
             </li>
           </ul>
         </div>
-        <Image
+        <img
           src="/assets/images/hero-new.svg"
           alt="hero-bg"
-          height="300"
-          width="300"
           className="hero-img"
         />
       </div>

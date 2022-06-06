@@ -4,6 +4,8 @@ import {
   FaFacebook,
   FaYoutube,
   FaLinkedin,
+  FaEnvelope,
+  FaMapMarkerAlt,
 } from "react-icons/fa";
 import Header from "../components/Header";
 
@@ -26,18 +28,27 @@ const Appointment = () => {
       <div className="section container mx-auto">
         <div className="inner">
           <h1>Book your video counselling Session !</h1>
-          <div className="flex">
+          <div className="appointment-inner">
             <div className="contact-desc">
-              <div className="contact-list">
-                <h2>Email</h2>
+              <div className="contact-list flex items-center">
+                <FaEnvelope size={48} color="#00aff0" className="mr-4" />
+                {/* <h2>Email</h2> */}
                 <a href="mailto:info@uniladder.co.uk">
                   <p>info@uniladder.co.uk</p>
                 </a>
               </div>
-              <div className="contact-list">
-                <h2>Address</h2>
-                <p>Bagbazar, Kathmandu, Nepal</p>
-                <p>Island Business Centre, Wellington Street, London</p>
+              <div className="contact-list flex items-center">
+                <FaMapMarkerAlt size={48} color="#00aff0" className="mr-4" />
+                <div>
+                  <p>
+                    <span>Head Office:</span>
+                  </p>
+                  <p>Island Business Centre, Wellington Street, London</p>
+                  <p>
+                    <span>Nepal Contact Office:</span>
+                  </p>
+                  <p>Bagbazar, Kathmandu, Nepal</p>
+                </div>
               </div>
               <div className="contact-list">
                 <h2 className="_2B7v3OyMli6L__KhEA5tdV">Social links</h2>
@@ -75,43 +86,82 @@ const Appointment = () => {
                 method="post"
                 onSubmit={handleOnSubmit}
               >
-                <div className="form-group">
-                  <div className="label">Full Name</div>
-                  <input
-                    className="input-group"
-                    type="text"
-                    name="fullName"
-                    placeholder="Eg. Anish Lamsal"
-                  />
+                <div className="grid grid-cols-1 md:grid-cols-2 md:gap-4">
+                  <div className="form-group">
+                    <div className="label">Full Name</div>
+                    <input
+                      className="input-group"
+                      type="text"
+                      name="fullName"
+                      placeholder="Eg. Anish Lamsal"
+                    />
+                  </div>
+                  <div className="form-group">
+                    <div className="label">Email Address</div>
+                    <input
+                      className="input-group"
+                      type="email"
+                      name="email"
+                      placeholder="Eg. anish@gmail.com"
+                    />
+                  </div>
+                  <div className="form-group">
+                    <div className="label">Contact Number</div>
+                    <input
+                      className="input-group"
+                      type="text"
+                      name="contact"
+                      placeholder="Eg. 9841234567"
+                    />
+                  </div>
+                  <div className="form-group">
+                    <div className="label">Location</div>
+                    <input
+                      className="input-group"
+                      type="text"
+                      name="location"
+                      placeholder="Eg. Hetauda"
+                    />
+                  </div>
+                  <div className="form-group">
+                    <div className="label">Level</div>
+                    <select name="level" id="level">
+                      <option value="undergraduate">Masters</option>
+                      <option value="postgraduate">Bachelors</option>
+
+                      <option value="phd">Phd</option>
+                    </select>
+                  </div>
+                  <div className="form-group">
+                    <div className="label">Academic Background</div>
+                    <input
+                      className="input-group"
+                      type="text"
+                      name="academic"
+                      placeholder="Eg. BBS"
+                    />
+                  </div>
+                  <div className="form-group">
+                    <div className="label">Grade/Percentage</div>
+                    <input
+                      className="input-group"
+                      type="text"
+                      name="grade"
+                      placeholder="Eg. 70%"
+                    />
+                  </div>
+                  <div className="form-group">
+                    <div className="label">Passout year</div>
+                    <input
+                      className="input-group"
+                      type="text"
+                      name="passout"
+                      placeholder="Eg. 2021"
+                    />
+                  </div>
                 </div>
-                <div className="form-group">
-                  <div className="label">Email Address</div>
-                  <input
-                    className="input-group"
-                    type="email"
-                    name="email"
-                    placeholder="Eg. anish@gmail.com"
-                  />
-                </div>
-                <div className="form-group">
-                  <div className="label">Contact Number</div>
-                  <input
-                    className="input-group"
-                    type="text"
-                    name="contact"
-                    placeholder="Eg. 9841234567"
-                  />
-                </div>
-                <div className="form-group">
-                  <div className="label">Location</div>
-                  <input
-                    className="input-group"
-                    type="text"
-                    name="location"
-                    placeholder="Eg. Hetauda"
-                  />
-                </div>
-                <button className="btn-primary inline-flex items-center text-white py-5">
+
+                <button className="btn-primary inline-flex items-center text-white py-5 mt-4">
                   Book now <FaArrowRight className="ml-2" />
                 </button>
               </form>

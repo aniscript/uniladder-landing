@@ -1,26 +1,35 @@
-const mail = require("@sendgrid/mail");
-
-mail.setApiKey(process.env.SENDGRID_API_KEY);
-
-export default (req, res) => {
+export default function (req, res) {
   const body = JSON.parse(req.body);
-
+  let nodemailer = require("nodemailer");
+  const transporter = nodemailer.createTransport({
+    port: 465,
+    host: "smtp.gmail.com",
+    auth: {
+      user: "webmailuniladder@gmail.com",
+      pass: "osnmjlcpgoogqcov",
+    },
+    secure: true,
+  });
   const message = `
   Name: ${body.fullName}\r\n
   Email: ${body.email}\r\n
   Contact: ${body.contact}\r\n
   Location: ${body.location}\r\n
+  Level: ${body.level}\r\n
+  Academic Background: ${body.academic}\r\n
+  Grade/Percentage: ${body.grade}\r\n
+  Passout year: ${body.passout}\r\n
   `;
-
-  const data = {
-    to: "aneeslml@gmail.com",
-    from: "anishlamsal97@gmail.com",
-    subject: "New Appointment",
+  const mailData = {
+    from: "webmailuniladder@gmail.com",
+    to: "receptionuniladder@gmail.com",
+    subject: `Message From ${body.fullName}`,
     text: message,
     html: message.replace(/\r\n/g, "<br>"),
   };
-
-  mail.send(data);
-
-  res.status(200).json({ status: "OK" });
-};
+  transporter.sendMail(mailData, function (err, info) {
+    if (err) console.log(err);
+    else console.log(info);
+  });
+  res.status(200);
+}
