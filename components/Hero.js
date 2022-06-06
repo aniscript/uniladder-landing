@@ -13,7 +13,7 @@ const Hero = () => {
       <div className="hero-section">
         <div className="hero-content">
           <h1>
-            Start your Journey to study <span>abroad</span>
+            Start your Journey to study <span>in the UK</span>
           </h1>
 
           <p>
@@ -25,7 +25,12 @@ const Hero = () => {
               Book Appointment Now <FaArrowRight className="ml-2" />
             </div>
           </Link>
-          <h5>200+ students onboarded</h5>
+          <h5 className="py-5">
+            <span>2500+</span> students counselled
+          </h5>
+          <h5 className="pb-5">
+            <span>100% visa success rate</span> for the last academic year
+          </h5>
           <ul className="social-icons">
             <li>
               <a

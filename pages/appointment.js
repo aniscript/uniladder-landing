@@ -9,6 +9,7 @@ import {
   FaPhone,
 } from "react-icons/fa";
 import Header from "../components/Header";
+import Head from "next/head";
 
 const Appointment = () => {
   async function handleOnSubmit(e) {
@@ -25,6 +26,10 @@ const Appointment = () => {
   }
   return (
     <>
+      <Head>
+        <title>Appointment - Uniladder Consultancy</title>
+        <meta name="description" content="Meta description for the Home page" />
+      </Head>
       <Header />
       <div className="section container mx-auto">
         <div className="inner">
