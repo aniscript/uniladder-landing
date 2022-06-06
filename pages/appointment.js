@@ -39,7 +39,7 @@ const Appointment = () => {
               <div className="contact-list flex items-center">
                 <FaEnvelope size={48} color="#00aff0" className="mr-4" />
 
-                <a href="mailto:info@uniladder.co.uk">
+                <a href="mailto:receptionuniladder@gmail.com">
                   <p>receptionuniladder@gmail.com</p>
                 </a>
               </div>
