@@ -1,10 +1,16 @@
 import "../public/assets/css/styles.css";
 import "../public//assets/css/globals.css";
 import Head from "next/head";
+import { ToastProvider } from "react-toast-notifications";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <div>
+    <ToastProvider
+      autoDismiss
+      autoDismissTimeout={4000}
+      // components={{ Toast: Snack }}
+      placement="top-center"
+    >
       <Head>
         <meta charset="UTF-8" />
         <meta name="keywords" content="title, meta, nextjs" />
@@ -12,7 +18,7 @@ function MyApp({ Component, pageProps }) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
       <Component {...pageProps} />
-    </div>
+    </ToastProvider>
   );
 }
 

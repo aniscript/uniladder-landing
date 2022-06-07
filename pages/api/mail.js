@@ -14,11 +14,13 @@ export default function (req, res) {
   Name: ${body.fullName}\r\n
   Email: ${body.email}\r\n
   Contact: ${body.contact}\r\n
-  Location: ${body.location}\r\n
   Level: ${body.level}\r\n
   Academic Background: ${body.academic}\r\n
   Grade/Percentage: ${body.grade}\r\n
   Passout year: ${body.passout}\r\n
+  English Test Done: ${body.english}\r\n
+  English Test Type: ${body.type}\r\n
+  Score: ${body.score}\r\n
   `;
   const mailData = {
     from: "webmailuniladder@gmail.com",

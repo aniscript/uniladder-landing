@@ -10,8 +10,12 @@ import {
 } from "react-icons/fa";
 import Header from "../components/Header";
 import Head from "next/head";
+import { useToasts } from "react-toast-notifications";
+import { useRouter } from "next/router";
 
 const Appointment = () => {
+  const router = useRouter();
+  const { addToast } = useToasts();
   async function handleOnSubmit(e) {
     e.preventDefault();
     const formData = {};
@@ -23,6 +27,11 @@ const Appointment = () => {
       method: "POST",
       body: JSON.stringify(formData),
     });
+    addToast("Mail sent successfully", {
+      appearance: "success",
+      autoDismiss: true,
+    });
+    router.push("/");
   }
   return (
     <>
@@ -134,24 +143,17 @@ const Appointment = () => {
                       placeholder="Eg. 9841234567"
                     />
                   </div>
-                  <div className="form-group">
-                    <div className="label">Location</div>
-                    <input
-                      className="input-group"
-                      type="text"
-                      name="location"
-                      placeholder="Eg. Hetauda"
-                    />
-                  </div>
+
                   <div className="form-group">
                     <div className="label">Level</div>
                     <select name="level" id="level">
-                      <option value="undergraduate">Masters</option>
-                      <option value="postgraduate">Bachelors</option>
-
-                      <option value="phd">Phd</option>
+                      <option value="Undergraduate">Masters</option>
+                      <option value="Postgraduate">Bachelors</option>
+                      <option value="A-level">+2/A-level</option>
+                      <option value="Phd">Phd</option>
                     </select>
                   </div>
+
                   <div className="form-group">
                     <div className="label">Academic Background</div>
                     <input
@@ -177,6 +179,33 @@ const Appointment = () => {
                       type="text"
                       name="passout"
                       placeholder="Eg. 2021"
+                    />
+                  </div>
+                  <div className="form-group">
+                    <div className="label">English Test Done ?</div>
+                    <select name="english" id="english">
+                      <option value="Not-Selected" disabled>
+                        Select one
+                      </option>
+                      <option value="Yes">Yes</option>
+                      <option value="No">No</option>
+                    </select>
+                  </div>
+                  <div className="form-group">
+                    <div className="label">English Test Type</div>
+                    <select name="type" id="type">
+                      <option value="IELTS">IELTS</option>
+                      <option value="PTE">PTE</option>
+                      <option value="TOEFL">TOEFL</option>
+                    </select>
+                  </div>
+                  <div className="form-group">
+                    <div className="label">Score</div>
+                    <input
+                      className="input-group"
+                      type="text"
+                      name="score"
+                      placeholder="Eg. L-7, R-7, S-7, W-7"
                     />
                   </div>
                 </div>
