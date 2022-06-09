@@ -5,12 +5,7 @@ import { ToastProvider } from "react-toast-notifications";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <ToastProvider
-      autoDismiss
-      autoDismissTimeout={4000}
-      // components={{ Toast: Snack }}
-      placement="top-center"
-    >
+    <ToastProvider autoDismiss autoDismissTimeout={4000} placement="top-center">
       <Head>
         <meta charset="UTF-8" />
         <meta name="keywords" content="title, meta, nextjs" />
