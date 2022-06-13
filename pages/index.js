@@ -32,7 +32,7 @@ function HomePage() {
       <Footer />
       <a
         href="https://wa.me/+442080042071"
-        class="whatsapp_float"
+        className="whatsapp_float"
         target="_blank"
         rel="noopener noreferrer"
       >

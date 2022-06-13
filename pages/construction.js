@@ -8,18 +8,18 @@ const construction = () => {
     <>
       <Header />
       <div className="section container mx-auto">
-        <div className="inner">
+        <div className="inner construction-section">
           <h1>This page is under construction</h1>
           <h1>Please visit soon !</h1>
           <Link href="/">
-            <button class="blob-btn">
+            <button className="blob-btn">
               Go back
-              <span class="blob-btn__inner">
-                <span class="blob-btn__blobs">
-                  <span class="blob-btn__blob"></span>
-                  <span class="blob-btn__blob"></span>
-                  <span class="blob-btn__blob"></span>
-                  <span class="blob-btn__blob"></span>
+              <span className="blob-btn__inner">
+                <span className="blob-btn__blobs">
+                  <span className="blob-btn__blob"></span>
+                  <span className="blob-btn__blob"></span>
+                  <span className="blob-btn__blob"></span>
+                  <span className="blob-btn__blob"></span>
                 </span>
               </span>
             </button>
