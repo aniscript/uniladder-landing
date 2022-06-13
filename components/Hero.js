@@ -74,7 +74,7 @@ const Hero = () => {
         </div>
         <Tilt className="parallax-effect" perspective={500}>
           <img
-            src="/assets/images/hero-new.svg"
+            src="/assets/images/248.svg"
             alt="hero-bg"
             className="hero-img"
           />

@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import { HiChevronLeft, HiChevronRight } from "react-icons/hi";
 
 const Testimonial = () => {
-  const [brands, setBrands] = useState([]);
-  //   const [testimonials, setTestimonials] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const handleClick = (index) => {
@@ -21,7 +19,7 @@ const Testimonial = () => {
     },
     {
       id: 2,
-      img: "https://scontent-lhr8-2.xx.fbcdn.net/v/t39.30808-6/286473352_10220647745005357_833046514730243823_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=vLj3orIl5iMAX_IVPEa&_nc_ht=scontent-lhr8-2.xx&oh=00_AT9Sb7FrvzUfsH1VahDGl9P64JnLMeQOEaq_SiJnq93-7w&oe=62A6BCE6",
+      img: "https://scontent-lhr8-2.xx.fbcdn.net/v/t39.30808-6/286473352_10220647745005357_833046514730243823_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=_wX44So-Py8AX_Huxxb&_nc_ht=scontent-lhr8-2.xx&oh=00_AT8xy7lPCMrboSHuwGoZrCBAN83Hz_NX0PPPM39UsNemlg&oe=62ACABA6",
       name: "Shasmita Badal",
       designation: "Student",
       testimonial:
@@ -42,33 +40,55 @@ const Testimonial = () => {
       <div className="container mx-auto section">
         <h2 className="main-title">Testimonials</h2>
         <div className="flex flex-col items-center justify-center">
-          {testimonials.length && (
-            <div className="testimonial-wrapper">
-              <div className="testimonial-content">
-                <img
-                  src={testimonials[currentIndex].img}
-                  className="testimonial-img"
-                  alt=""
-                />
-                <p className="testimonial-text">
-                  "{testimonials[currentIndex].testimonial}"
-                </p>
-                <h4 className="testimonial-title">
-                  {testimonials[currentIndex].name}
-                </h4>
-                <h5 className="testimonial-designation">
-                  {testimonials[currentIndex].designation}
-                </h5>
-              </div>
-            </div>
-          )}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {testimonials.length && (
+              <>
+                <div className="testimonial-wrapper">
+                  <div className="testimonial-content">
+                    <img
+                      src={testimonials[currentIndex].img}
+                      className="testimonial-img"
+                      alt=""
+                    />
+                    <p className="testimonial-text">
+                      "{testimonials[currentIndex].testimonial}"
+                    </p>
+                    <h4 className="testimonial-title">
+                      {testimonials[currentIndex].name}
+                    </h4>
+                    <h5 className="testimonial-designation">
+                      {testimonials[currentIndex].designation}
+                    </h5>
+                  </div>
+                </div>
+                <div className="testimonial-wrapper">
+                  <div className="testimonial-content">
+                    <img
+                      src={testimonials[currentIndex + 1].img}
+                      className="testimonial-img"
+                      alt=""
+                    />
+                    <p className="testimonial-text">
+                      "{testimonials[currentIndex + 1].testimonial}"
+                    </p>
+                    <h4 className="testimonial-title">
+                      {testimonials[currentIndex + 1].name}
+                    </h4>
+                    <h5 className="testimonial-designation">
+                      {testimonials[currentIndex + 1].designation}
+                    </h5>
+                  </div>
+                </div>
+              </>
+            )}
+          </div>
           <div className="testimonial-controls flex">
             <div
               className="flex"
               onClick={() =>
                 handleClick(
                   currentIndex === 0
-                    ? testimonials.length - 1
+                    ? testimonials.length - 2
                     : currentIndex - 1
                 )
               }
@@ -79,7 +99,7 @@ const Testimonial = () => {
               className="flex"
               onClick={() =>
                 handleClick(
-                  currentIndex === testimonials.length - 1
+                  currentIndex === testimonials.length - 2
                     ? 0
                     : currentIndex + 1
                 )
