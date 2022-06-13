@@ -19,17 +19,19 @@ const Ready = () => {
               contact you soon.
             </p>
             <Link href="/appointment">
-              <button className="blob-btn">
-                Book an appointment
-                <span className="blob-btn__inner">
-                  <span className="blob-btn__blobs">
-                    <span className="blob-btn__blob"></span>
-                    <span className="blob-btn__blob"></span>
-                    <span className="blob-btn__blob"></span>
-                    <span className="blob-btn__blob"></span>
+              <a>
+                <button className="blob-btn">
+                  Book an appointment
+                  <span className="blob-btn__inner">
+                    <span className="blob-btn__blobs">
+                      <span className="blob-btn__blob"></span>
+                      <span className="blob-btn__blob"></span>
+                      <span className="blob-btn__blob"></span>
+                      <span className="blob-btn__blob"></span>
+                    </span>
                   </span>
-                </span>
-              </button>
+                </button>
+              </a>
             </Link>
           </div>
           <img src="/assets/images/ready.png" alt="" className="ready-img" />
