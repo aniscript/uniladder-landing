@@ -12,6 +12,7 @@ import Header from "../components/Header";
 import Head from "next/head";
 import { useToasts } from "react-toast-notifications";
 import { useRouter } from "next/router";
+import Footer from "../components/Footer";
 
 const Appointment = () => {
   const router = useRouter();
@@ -45,14 +46,14 @@ const Appointment = () => {
           <h1>Book your video counselling Session !</h1>
           <div className="appointment-inner">
             <div className="contact-desc">
-              <div className="contact-list flex items-center">
+              <div className="contact-list flex flex-col md:items-center md:flex-row">
                 <FaEnvelope size={48} color="#00aff0" className="mr-4" />
 
                 <a href="mailto:receptionuniladder@gmail.com">
                   <p>receptionuniladder@gmail.com</p>
                 </a>
               </div>
-              <div className="contact-list flex items-center">
+              <div className="contact-list flex flex-col md:items-center md:flex-row">
                 <FaPhone size={48} color="#00aff0" className="mr-4" />
                 <div>
                   <a href="tel:+442080042071">
@@ -66,7 +67,7 @@ const Appointment = () => {
                   </a>
                 </div>
               </div>
-              <div className="contact-list flex items-center">
+              <div className="contact-list flex flex-col md:items-center md:flex-row">
                 <FaMapMarkerAlt size={48} color="#00aff0" className="mr-4" />
                 <div>
                   <p>
@@ -184,9 +185,7 @@ const Appointment = () => {
                   <div className="form-group">
                     <div className="label">English Test Done ?</div>
                     <select name="english" id="english">
-                      <option value="Not-Selected" disabled>
-                        Select one
-                      </option>
+                      <option value="Not-Selected">Select one</option>
                       <option value="Yes">Yes</option>
                       <option value="No">No</option>
                     </select>
@@ -194,6 +193,7 @@ const Appointment = () => {
                   <div className="form-group">
                     <div className="label">English Test Type</div>
                     <select name="type" id="type">
+                      <option value="Not-done">None</option>
                       <option value="IELTS">IELTS</option>
                       <option value="PTE">PTE</option>
                       <option value="TOEFL">TOEFL</option>
@@ -218,6 +218,7 @@ const Appointment = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 };
