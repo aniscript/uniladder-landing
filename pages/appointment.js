@@ -185,9 +185,7 @@ const Appointment = () => {
                   <div className="form-group">
                     <div className="label">English Test Done ?</div>
                     <select name="english" id="english">
-                      <option value="Not-Selected" disabled>
-                        Select one
-                      </option>
+                      <option value="Not-Selected">Select one</option>
                       <option value="Yes">Yes</option>
                       <option value="No">No</option>
                     </select>
@@ -195,6 +193,7 @@ const Appointment = () => {
                   <div className="form-group">
                     <div className="label">English Test Type</div>
                     <select name="type" id="type">
+                      <option value="Not-done">None</option>
                       <option value="IELTS">IELTS</option>
                       <option value="PTE">PTE</option>
                       <option value="TOEFL">TOEFL</option>
