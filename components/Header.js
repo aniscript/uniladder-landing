@@ -41,15 +41,15 @@ const Header = () => {
           {showMobile && (
             <div className="menu-mobile">
               <ul className="mobile-nav">
-                <a href="/">
+                <Link href="/">
                   <li>Home</li>
-                </a>
-                <a href="/construction">
+                </Link>
+                <Link href="/construction">
                   <li>About</li>
-                </a>
-                <a href="/construction">
+                </Link>
+                <Link href="/construction">
                   <li>Our Services</li>
-                </a>
+                </Link>
                 <a href="/construction">
                   <li>Universities</li>
                 </a>
@@ -88,18 +88,27 @@ const Header = () => {
         </div>
         <div className="nav-right">
           <ul className="menu">
-            <a href="/">
-              <li>Home</li>
-            </a>
-            <a href="/construction">
-              <li>About</li>
-            </a>
-            <a href="/construction">
-              <li>Our Services</li>
-            </a>
-            <a href="/construction">
-              <li>Universities</li>
-            </a>
+            <Link href="/">
+              <a>
+                <li>Home</li>
+              </a>
+            </Link>
+            <Link href="/construction">
+              <a>
+                <li>About</li>
+              </a>
+            </Link>
+
+            <Link href="/construction">
+              <a>
+                <li>Our Services</li>
+              </a>
+            </Link>
+            <Link href="/construction">
+              <a>
+                <li>Universities</li>
+              </a>
+            </Link>
           </ul>
           <Link href="/appointment">
             <button class="blob-btn">

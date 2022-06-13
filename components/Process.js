@@ -30,7 +30,7 @@ const Process = () => {
             <h3>Start your journey</h3>
             <p>
               Choose an university and course best suited for your career and
-              start your journey to study abroad.
+              start your journey to study in the UK.
             </p>
           </div>
         </div>

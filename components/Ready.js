@@ -11,11 +11,12 @@ const Ready = () => {
             <h2>Are you ready to fly and</h2>
             <h5>pursue your dreams?</h5>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim
-              quisque at massa vel quis turpis eu. Nam cursus aliquet ultricies
-              semper neque, pellentesque aliquam, et consequat. Faucibus nulla
-              venenatis, amet vitae orci viverra nisl sollicitudin malesuada.
-              Ultricies non ac tempor arcu turpis hendrerit laoreet elementum.
+              If you want to study in the UK and make the best for your career,
+              Uni ladder is happy to help you achieve your dream. We will
+              provide the best guidance for you from the start and even after
+              you have reached the UK. Our counsellers are always available to
+              help you. Feel free to book an appointment with us and we will
+              contact you soon.
             </p>
             {/* <Link href="/appointment">
               <div className="btn btn-secondary inline-flex items-centerpy-5">

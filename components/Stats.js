@@ -54,7 +54,7 @@ const Stats = () => {
               <CountUp
                 className="account-balance"
                 start={0}
-                end={30}
+                end={100}
                 duration={2.75}
                 useEasing={true}
                 useGrouping={true}
