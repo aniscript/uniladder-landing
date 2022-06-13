@@ -11,11 +11,11 @@ const Videos = () => {
             <iframe
               width="100%"
               height="250"
-              src="https://www.youtube.com/embed/PsPGxGzBW4M"
+              src="https://www.youtube.com/embed/BjfSpo26UU4"
               title="YouTube video player"
-              frameborder="0"
+              frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
+              allowFullScreen
             ></iframe>
           </div>
           <div className="video-wrapper">
@@ -24,9 +24,9 @@ const Videos = () => {
               height="250"
               src="https://www.youtube.com/embed/MZha-oIlmPs"
               title="YouTube video player"
-              frameborder="0"
+              frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
+              allowFullScreen
             ></iframe>
           </div>
           <div className="video-wrapper">
@@ -35,22 +35,22 @@ const Videos = () => {
               height="250"
               src="https://www.youtube.com/embed/JBS-yz-9WvM"
               title="YouTube video player"
-              frameborder="0"
+              frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
+              allowFullScreen
             ></iframe>
           </div>
         </div>
         <div className="flex items-center justify-center mt-8">
           <Link href="https://www.youtube.com/c/GaneshKhadkalive">
-            <a class="blob-btn" target="_blank">
+            <a className="blob-btn" target="_blank">
               View All Videos
-              <span class="blob-btn__inner">
-                <span class="blob-btn__blobs">
-                  <span class="blob-btn__blob"></span>
-                  <span class="blob-btn__blob"></span>
-                  <span class="blob-btn__blob"></span>
-                  <span class="blob-btn__blob"></span>
+              <span className="blob-btn__inner">
+                <span className="blob-btn__blobs">
+                  <span className="blob-btn__blob"></span>
+                  <span className="blob-btn__blob"></span>
+                  <span className="blob-btn__blob"></span>
+                  <span className="blob-btn__blob"></span>
                 </span>
               </span>
             </a>

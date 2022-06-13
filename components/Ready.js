@@ -18,20 +18,15 @@ const Ready = () => {
               help you. Feel free to book an appointment with us and we will
               contact you soon.
             </p>
-            {/* <Link href="/appointment">
-              <div className="btn btn-secondary inline-flex items-centerpy-5">
-                Book Appointment Now <FaArrowRight className="ml-2" />
-              </div>
-            </Link> */}
             <Link href="/appointment">
-              <button class="blob-btn">
+              <button className="blob-btn">
                 Book an appointment
-                <span class="blob-btn__inner">
-                  <span class="blob-btn__blobs">
-                    <span class="blob-btn__blob"></span>
-                    <span class="blob-btn__blob"></span>
-                    <span class="blob-btn__blob"></span>
-                    <span class="blob-btn__blob"></span>
+                <span className="blob-btn__inner">
+                  <span className="blob-btn__blobs">
+                    <span className="blob-btn__blob"></span>
+                    <span className="blob-btn__blob"></span>
+                    <span className="blob-btn__blob"></span>
+                    <span className="blob-btn__blob"></span>
                   </span>
                 </span>
               </button>

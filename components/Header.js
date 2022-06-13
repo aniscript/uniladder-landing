@@ -1,12 +1,6 @@
 import React, { useState } from "react";
 import Link from "next/link";
-import {
-  FaBars,
-  FaClose,
-  FaFacebook,
-  FaLinkedin,
-  FaYoutube,
-} from "react-icons/fa";
+import { FaFacebook, FaLinkedin, FaYoutube } from "react-icons/fa";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
 const Header = () => {
@@ -47,7 +41,7 @@ const Header = () => {
                 <Link href="/construction">
                   <li>About</li>
                 </Link>
-                <Link href="/construction">
+                <Link href="/services">
                   <li>Our Services</li>
                 </Link>
                 <a href="/construction">
@@ -99,7 +93,7 @@ const Header = () => {
               </a>
             </Link>
 
-            <Link href="/construction">
+            <Link href="/services">
               <a>
                 <li>Our Services</li>
               </a>
@@ -111,14 +105,14 @@ const Header = () => {
             </Link>
           </ul>
           <Link href="/appointment">
-            <button class="blob-btn">
+            <button className="blob-btn">
               Book an appointment
-              <span class="blob-btn__inner">
-                <span class="blob-btn__blobs">
-                  <span class="blob-btn__blob"></span>
-                  <span class="blob-btn__blob"></span>
-                  <span class="blob-btn__blob"></span>
-                  <span class="blob-btn__blob"></span>
+              <span className="blob-btn__inner">
+                <span className="blob-btn__blobs">
+                  <span className="blob-btn__blob"></span>
+                  <span className="blob-btn__blob"></span>
+                  <span className="blob-btn__blob"></span>
+                  <span className="blob-btn__blob"></span>
                 </span>
               </span>
             </button>
