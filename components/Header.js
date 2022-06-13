@@ -10,11 +10,13 @@ const Header = () => {
       <div className="nav section">
         <div className="logo">
           <Link href="/">
-            <img
-              src="/assets/images/logo.png"
-              alt="logo"
-              className="logo-img"
-            />
+            <a>
+              <img
+                src="/assets/images/logo.png"
+                alt="logo"
+                className="logo-img"
+              />
+            </a>
           </Link>
         </div>
         <div className="nav-mobile">
@@ -36,19 +38,29 @@ const Header = () => {
             <div className="menu-mobile">
               <ul className="mobile-nav">
                 <Link href="/">
-                  <li>Home</li>
+                  <a>
+                    <li>Home</li>
+                  </a>
                 </Link>
                 <Link href="/construction">
-                  <li>About</li>
+                  <a>
+                    <li>About</li>
+                  </a>
                 </Link>
                 <Link href="/services">
-                  <li>Our Services</li>
+                  <a>
+                    <li>Our Services</li>
+                  </a>
                 </Link>
                 <a href="/construction">
-                  <li>Universities</li>
+                  <a>
+                    <li>Universities</li>
+                  </a>
                 </a>
                 <Link href="/appointment">
-                  <div className="btn-primary mt-8">Book an appointment </div>
+                  <a>
+                    <div className="btn-primary mt-8">Book an appointment </div>
+                  </a>
                 </Link>
               </ul>
               <ul className="social-icons">
@@ -105,17 +117,19 @@ const Header = () => {
             </Link>
           </ul>
           <Link href="/appointment">
-            <button className="blob-btn">
-              Book an appointment
-              <span className="blob-btn__inner">
-                <span className="blob-btn__blobs">
-                  <span className="blob-btn__blob"></span>
-                  <span className="blob-btn__blob"></span>
-                  <span className="blob-btn__blob"></span>
-                  <span className="blob-btn__blob"></span>
+            <a>
+              <button className="blob-btn">
+                Book an appointment
+                <span className="blob-btn__inner">
+                  <span className="blob-btn__blobs">
+                    <span className="blob-btn__blob"></span>
+                    <span className="blob-btn__blob"></span>
+                    <span className="blob-btn__blob"></span>
+                    <span className="blob-btn__blob"></span>
+                  </span>
                 </span>
-              </span>
-            </button>
+              </button>
+            </a>
           </Link>
         </div>
       </div>

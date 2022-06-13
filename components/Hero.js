@@ -15,28 +15,24 @@ const Hero = () => {
           <h1>
             Start your Journey to study <span>in the UK</span>
           </h1>
-
           <p>
             Get real time help through video chat from the{" "}
             <span>British Council Certified Counsellor.</span>
           </p>
-          {/* <Link href="/appointment">
-            <div className="btn btn-primary inline-flex items-center text-white py-5">
-              Book Appointment Now <FaArrowRight className="ml-2" />
-            </div>
-          </Link> */}
           <Link href="/appointment">
-            <button className="blob-btn">
-              Book Appointment Now
-              <span className="blob-btn__inner">
-                <span className="blob-btn__blobs">
-                  <span className="blob-btn__blob"></span>
-                  <span className="blob-btn__blob"></span>
-                  <span className="blob-btn__blob"></span>
-                  <span className="blob-btn__blob"></span>
+            <a>
+              <button className="blob-btn">
+                Book Appointment Now
+                <span className="blob-btn__inner">
+                  <span className="blob-btn__blobs">
+                    <span className="blob-btn__blob"></span>
+                    <span className="blob-btn__blob"></span>
+                    <span className="blob-btn__blob"></span>
+                    <span className="blob-btn__blob"></span>
+                  </span>
                 </span>
-              </span>
-            </button>
+              </button>
+            </a>
           </Link>
 
           <h5 className="py-5">
