@@ -1,4 +1,5 @@
 import React from "react";
+import CountUp from "react-countup";
 
 const Stats = () => {
   return (
@@ -9,19 +10,76 @@ const Stats = () => {
         <p className="sub-title">around the UK</p>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
           <div className="stats-wrapper">
-            <h2>2500+</h2>
+            <img src="/assets/images/visa.svg" className="stats-img" alt="" />
+
+            <h2>
+              <CountUp
+                className="account-balance"
+                start={0}
+                end={2500}
+                duration={2.75}
+                useEasing={true}
+                useGrouping={true}
+                suffix="+"
+              />
+            </h2>
             <p>Students counselled</p>
           </div>
           <div className="stats-wrapper">
-            <h2>500+</h2>
+            <img
+              src="/assets/images/counselling.svg"
+              className="stats-img"
+              alt=""
+            />
+            <h2>
+              <CountUp
+                className="account-balance"
+                start={0}
+                end={500}
+                duration={2.75}
+                useEasing={true}
+                useGrouping={true}
+                suffix="+"
+              />
+            </h2>
             <p>Students on our platform </p>
           </div>
           <div className="stats-wrapper">
-            <h2>30+</h2>
+            <img
+              src="/assets/images/university.svg"
+              className="stats-img"
+              alt=""
+            />
+            <h2>
+              <CountUp
+                className="account-balance"
+                start={0}
+                end={30}
+                duration={2.75}
+                useEasing={true}
+                useGrouping={true}
+                suffix="+"
+              />
+            </h2>
             <p>Universities options</p>
           </div>
           <div className="stats-wrapper">
-            <h2>100%</h2>
+            <img
+              src="/assets/images/departure.svg"
+              className="stats-img"
+              alt=""
+            />
+            <h2>
+              <CountUp
+                className="account-balance"
+                start={0}
+                end={100}
+                duration={2.75}
+                useEasing={true}
+                useGrouping={true}
+                suffix="%"
+              />
+            </h2>
             <p>Visa success rate</p>
           </div>
         </div>
