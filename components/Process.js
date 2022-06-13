@@ -9,14 +9,14 @@ const Process = () => {
       <div className="container mx-auto section">
         <div className="grid grid-cols-1 md:grid-cols-3 md:gap-4">
           <div className="process-wrapper">
-            <div className="process-circle green">
+            <div className="process-circle">
               <AiOutlineUser size={48} color="#fff" />
             </div>
             <h3>Create your profile</h3>
             <p>First create your profile and let us know your interests.</p>
           </div>
           <div className="process-wrapper">
-            <div className="process-circle blue">
+            <div className="process-circle">
               <AiOutlineCalendar size={48} color="#fff" />
             </div>
             <h3>Book an appointment</h3>
@@ -24,7 +24,7 @@ const Process = () => {
             <p>Book a 1:1 video chat appointment with our counseller.</p>
           </div>
           <div className="process-wrapper">
-            <div className="process-circle red">
+            <div className="process-circle">
               <BiPaperPlane size={48} color="#fff" />
             </div>
             <h3>Start your journey</h3>

@@ -17,10 +17,23 @@ const Ready = () => {
               venenatis, amet vitae orci viverra nisl sollicitudin malesuada.
               Ultricies non ac tempor arcu turpis hendrerit laoreet elementum.
             </p>
-            <Link href="/appointment">
+            {/* <Link href="/appointment">
               <div className="btn btn-secondary inline-flex items-centerpy-5">
                 Book Appointment Now <FaArrowRight className="ml-2" />
               </div>
+            </Link> */}
+            <Link href="/appointment">
+              <button class="blob-btn">
+                Book an appointment
+                <span class="blob-btn__inner">
+                  <span class="blob-btn__blobs">
+                    <span class="blob-btn__blob"></span>
+                    <span class="blob-btn__blob"></span>
+                    <span class="blob-btn__blob"></span>
+                    <span class="blob-btn__blob"></span>
+                  </span>
+                </span>
+              </button>
             </Link>
           </div>
           <img src="/assets/images/ready.png" alt="" className="ready-img" />

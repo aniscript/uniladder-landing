@@ -5,8 +5,8 @@ import {
   FaLinkedin,
   FaYoutube,
 } from "react-icons/fa";
-import Image from "next/image";
 import Link from "next/link";
+import Tilt from "react-parallax-tilt";
 const Hero = () => {
   return (
     <div className="container mx-auto section">
@@ -20,11 +20,25 @@ const Hero = () => {
             Get real time help through video chat from the{" "}
             <span>British Council Certified Counsellor.</span>
           </p>
-          <Link href="/appointment">
+          {/* <Link href="/appointment">
             <div className="btn btn-primary inline-flex items-center text-white py-5">
               Book Appointment Now <FaArrowRight className="ml-2" />
             </div>
+          </Link> */}
+          <Link href="/appointment">
+            <button class="blob-btn">
+              Book Appointment Now
+              <span class="blob-btn__inner">
+                <span class="blob-btn__blobs">
+                  <span class="blob-btn__blob"></span>
+                  <span class="blob-btn__blob"></span>
+                  <span class="blob-btn__blob"></span>
+                  <span class="blob-btn__blob"></span>
+                </span>
+              </span>
+            </button>
           </Link>
+
           <h5 className="py-5">
             <span>2500+</span> students counselled
           </h5>
@@ -58,11 +72,13 @@ const Hero = () => {
             </li>
           </ul>
         </div>
-        <img
-          src="/assets/images/hero-new.svg"
-          alt="hero-bg"
-          className="hero-img"
-        />
+        <Tilt className="parallax-effect" perspective={500}>
+          <img
+            src="/assets/images/hero-new.svg"
+            alt="hero-bg"
+            className="hero-img"
+          />
+        </Tilt>
       </div>
     </div>
   );
