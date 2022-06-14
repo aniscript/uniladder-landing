@@ -49,7 +49,7 @@ const about = () => {
               </p>
             </div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 mt-20">
+          <div className="grid grid-cols-1 md:grid-cols-3 mt-10">
             <div className="about-content col-span-2 md:pr-20">
               <h3>Why study in the UK?</h3>
               <p>
@@ -94,7 +94,7 @@ const about = () => {
               />
             </div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-20 mt-20">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-20 mt-10">
             <div className="about-content">
               <h3>Whatever You Decide To Study, You Can Study in the UK</h3>
               <p>
@@ -137,7 +137,7 @@ const about = () => {
               </p>
             </div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-20 mt-20">
+          <div className="grid grid-cols-1">
             <div className="about-content">
               <h3>
                 Why studying in the UK is a perfect option for international
@@ -211,7 +211,7 @@ const about = () => {
               </p>
             </div>
           </div>
-          <div className="grid grid-cols-1 mt-20">
+          <div className="grid grid-cols-1">
             <div className="about-content">
               <h2>Financial Benefits</h2>
               <h3>
@@ -251,7 +251,7 @@ const about = () => {
               </p>
             </div>
           </div>
-          <div className="grid grid-cols-1 mt-20">
+          <div className="grid grid-cols-1">
             <div className="about-content">
               <h2>Other Benefits</h2>
               <h3>The UK Has a Unique Culture</h3>
