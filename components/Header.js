@@ -42,7 +42,7 @@ const Header = () => {
                     <li>Home</li>
                   </a>
                 </Link>
-                <Link href="/construction">
+                <Link href="/about">
                   <a>
                     <li>About</li>
                   </a>
@@ -99,7 +99,7 @@ const Header = () => {
                 <li>Home</li>
               </a>
             </Link>
-            <Link href="/construction">
+            <Link href="/about">
               <a>
                 <li>About</li>
               </a>
