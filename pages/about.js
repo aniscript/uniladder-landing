@@ -24,8 +24,7 @@ const about = () => {
             </div>
             <div className="about-content col-span-2 md:pl-20">
               <h3>
-                Uni ladder has been providing guidance to students for more than
-                5 years.
+                Uni ladder has been providing guidance to students since 2019.
               </h3>
               <p>
                 UK is one of the best hub for international students in the
@@ -96,7 +95,7 @@ const about = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-20 mt-10">
             <div className="about-content">
-              <h3>Whatever You Decide To Study, You Can Study in the UK</h3>
+              <h3>You Can Study Any Course Of Desire</h3>
               <p>
                 The UK has countless high education institutions, and almost
                 every single one of them has opportunities for international
@@ -214,9 +213,7 @@ const about = () => {
           <div className="grid grid-cols-1">
             <div className="about-content">
               <h2>Financial Benefits</h2>
-              <h3>
-                British Universities are Affordable, No Matter Which You Choose
-              </h3>
+              <h3>British Universities are Affordable</h3>
               <p>
                 UK degrees take less time to attain than degrees in other
                 countries. Where other countries take at least four years for an
@@ -281,27 +278,28 @@ const about = () => {
               <h3>The UK is the Gateway to The Rest of Europe</h3>
               <p>
                 If you want to travel Europe, the UK is the place to be. In the
-                United Kingdom alone, you can travel to Scotland, Wales, and
-                Northern Ireland and learn about the different backgrounds and
-                lifestyles in each country. Public transportation makes it
-                simple to travel the entire United Kingdom and take in the
-                sights and sounds. As a student, you can receive special rates
-                for transportation when you buy monthly passes. Those same
-                public transportation routes can be utilized to reach the rest
-                of Europe. The Chunnel (English Channel Tunnel) can take you
-                right into mainland Europe within a day. You can obtain public
-                transportation passes for the countries close to the UK, and you
-                can explore wherever you want on the continent. Just make sure
-                you have the necessary paperwork to do so (passports), and take
-                the time you’ll have on weekends and long breaks in order to
-                take in the sights and sounds of the rest of mainland Europe. A
-                world-class education in a multicultural world can help to make
-                you ready for the life that you will have after university. And
-                it really helps that you will be able to enjoy UK and Europe in
-                a unique way that you couldn’t anywhere else. Now that you’ve
-                taken a look, why won’t you consider to study in the UK in your
-                near future? Check out more of the resources on this page in
-                order to get what you need to study in the UK successfully.
+                United Kingdom alone, you can travel to England, Scotland,
+                Wales, and Northern Ireland and learn about the different
+                backgrounds and lifestyles in each country. Public
+                transportation makes it simple to travel the entire United
+                Kingdom and take in the sights and sounds. As a student, you can
+                receive special rates for transportation when you buy monthly
+                passes. Those same public transportation routes can be utilized
+                to reach the rest of Europe. The Chunnel (English Channel
+                Tunnel) can take you right into mainland Europe within a day.
+                You can obtain public transportation passes for the countries
+                close to the UK, and you can explore wherever you want on the
+                continent. Just make sure you have the necessary paperwork to do
+                so (passports), and take the time you’ll have on weekends and
+                long breaks in order to take in the sights and sounds of the
+                rest of mainland Europe. A world-class education in a
+                multicultural world can help to make you ready for the life that
+                you will have after university. And it really helps that you
+                will be able to enjoy UK and Europe in a unique way that you
+                couldn’t anywhere else. Now that you’ve taken a look, why won’t
+                you consider to study in the UK in your near future? Check out
+                more of the resources on this page in order to get what you need
+                to study in the UK successfully.
               </p>
               <h3>The UK student visa</h3>
               <p>
