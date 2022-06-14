@@ -52,18 +52,26 @@ const Footer = () => {
             </div>
             <div className="footer-columns flex justify-start md:justify-center ">
               <ul className="footer-list">
-                <Link href="/about">
-                  <a>About Us </a>
-                </Link>
-                <Link href="/services">
-                  <a>Our Services</a>
-                </Link>
-                <Link href="/construction">
-                  <a>Universities</a>
-                </Link>
-                <Link href="/appointment">
-                  <a>Contact</a>
-                </Link>
+                <li>
+                  <Link href="/about">
+                    <a>About Us </a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/services">
+                    <a>Our Services</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/construction">
+                    <a>Universities</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/appointment">
+                    <a>Contact</a>
+                  </Link>
+                </li>
               </ul>
             </div>
             <div className="footer-columns">
