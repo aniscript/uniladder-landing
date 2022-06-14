@@ -1,8 +1,10 @@
 /* Typography */
-@import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/hk-grotesk.min.css");
+/* @import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/hk-grotesk.min.css"); */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
 
 body {
-  font-family: "HK Grotesk", sans-serif;
+  /* font-family: "HK Grotesk", sans-serif; */
+  font-family: "Inter", sans-serif;
   background-color: #f5f5f5;
 }
 /* .btn-primary {
@@ -164,7 +166,7 @@ body {
   width: 90%;
   font-weight: 800;
   color: #153c66;
-  font-size: 4.375rem;
+  font-size: 4.175rem;
   line-height: 1;
   text-shadow: 2px 2px 3px rgba(21, 60, 102, 25%);
 }
@@ -510,7 +512,7 @@ select {
   padding: 10em 0 3em 0;
 }
 .ready-wrapper {
-  background-color: #fac4a1;
+  background-color: #ffe5d4;
   padding: 3em;
   border-radius: 8px;
   position: relative;
@@ -534,10 +536,11 @@ select {
   text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.8);
 }
 .ready-content h5 {
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   line-height: 1.44;
   color: #153c66;
   margin-bottom: 0.5em;
+  font-weight: 500;
 }
 .ready-content p {
   font-size: 1.125rem;
