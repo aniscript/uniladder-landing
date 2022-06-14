@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import {
   FaFacebook,
@@ -51,18 +52,18 @@ const Footer = () => {
             </div>
             <div className="footer-columns flex justify-start md:justify-center ">
               <ul className="footer-list">
-                <li>
-                  <a href="">About Us </a>
-                </li>
-                <li>
-                  <a href="">Our Services</a>
-                </li>
-                <li>
-                  <a href="">Universities</a>
-                </li>
-                <li>
-                  <a href="">Contact</a>
-                </li>
+                <Link href="/about">
+                  <a>About Us </a>
+                </Link>
+                <Link href="/services">
+                  <a>Our Services</a>
+                </Link>
+                <Link href="/construction">
+                  <a>Universities</a>
+                </Link>
+                <Link href="/appointment">
+                  <a>Contact</a>
+                </Link>
               </ul>
             </div>
             <div className="footer-columns">
