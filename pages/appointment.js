@@ -124,6 +124,7 @@ const Appointment = () => {
                       type="text"
                       name="fullName"
                       placeholder="Eg. Anish Lamsal"
+                      required
                     />
                   </div>
                   <div className="form-group">
@@ -133,6 +134,7 @@ const Appointment = () => {
                       type="email"
                       name="email"
                       placeholder="Eg. anish@gmail.com"
+                      required
                     />
                   </div>
                   <div className="form-group">
@@ -142,6 +144,7 @@ const Appointment = () => {
                       type="text"
                       name="contact"
                       placeholder="Eg. 9841234567"
+                      required
                     />
                   </div>
 

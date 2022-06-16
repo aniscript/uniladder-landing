@@ -346,6 +346,7 @@ select {
   box-shadow: 0 0.4em 2.5em 0 rgba(201, 209, 222, 60%);
   transition: 0.2s ease;
   cursor: pointer;
+  min-height: 300px;
 }
 .services-img-wrapper {
   display: flex;
@@ -383,10 +384,10 @@ select {
 }
 .university-card {
   display: flex;
-  width: 100em;
+  width: 120em;
   justify-content: space-around;
-  -webkit-animation: scroll-left 10s linear infinite;
-  animation: scroll-left 10s linear infinite;
+  -webkit-animation: scroll-left 30s linear infinite;
+  animation: scroll-left 30s linear infinite;
 }
 .university-card:hover {
   animation-play-state: paused;
@@ -405,7 +406,7 @@ select {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-50em);
+    transform: translateX(-130em);
   }
 }
 
