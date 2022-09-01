@@ -52,11 +52,11 @@ const Header = () => {
                     <li>Our Services</li>
                   </a>
                 </Link>
-                <a href="/construction">
+                <Link href="/sample">
                   <a>
-                    <li>Universities</li>
+                    <li>Sample Documents</li>
                   </a>
-                </a>
+                </Link>
                 <Link href="/appointment">
                   <a>
                     <div className="btn-primary mt-8">Book an appointment </div>
@@ -110,9 +110,9 @@ const Header = () => {
                 <li>Our Services</li>
               </a>
             </Link>
-            <Link href="/construction">
+            <Link href="/sample">
               <a>
-                <li>Universities</li>
+                <li>Sample Documents</li>
               </a>
             </Link>
           </ul>

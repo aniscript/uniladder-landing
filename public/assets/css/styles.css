@@ -410,6 +410,16 @@ select {
   }
 }
 
+/* Sample */
+.sample-wrapper {
+  padding: 1em 2em;
+  border-radius: 1rem;
+  box-shadow: 0 0.4em 2.5em 0 rgba(201, 209, 222, 60%);
+  transition: 0.2s ease;
+  cursor: pointer;
+  /* min-height: 300px; */
+}
+
 /* Flow */
 .flow-section {
   padding: 4em 0;
