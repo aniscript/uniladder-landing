@@ -435,7 +435,7 @@ select {
 .flow-card h1 {
   font-size: 11.25em;
   font-weight: 900;
-  line-height: 0.75;
+  line-height: 0.76;
   transition: 0.5s;
   -webkit-text-stroke: 1px #f96301;
   color: transparent;
