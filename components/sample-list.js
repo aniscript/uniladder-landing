@@ -90,6 +90,13 @@ const sampleList = [
     description:
       "We provide guidance to the students after their arrival regarding different registrations(such as GP, NI, etc.) and job finding in the UK ",
   },
+  {
+    id: 14,
+    link: "/assets/documents/relationship_evidence.pdf",
+    title: "Additional Relationship Evidence",
+    description:
+      "We provide guidance to the students after their arrival regarding different registrations(such as GP, NI, etc.) and job finding in the UK ",
+  },
 ];
 
 export default sampleList;
