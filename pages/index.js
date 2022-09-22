@@ -17,7 +17,10 @@ function HomePage() {
     <>
       <Head>
         <title>Home - Uniladder Consultancy</title>
-        <meta name="description" content="Meta description for the Home page" />
+        <meta
+          name="description"
+          content="Uni Ladder Consultancy is a London based international students recruitment agency. "
+        />
       </Head>
       <Header />
       <Hero />
