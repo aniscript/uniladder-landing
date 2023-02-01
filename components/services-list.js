@@ -32,7 +32,7 @@ const servicesList = [
     img: "/assets/images/accomodation.svg",
     title: "Accomodation",
     description:
-      "We have dedicated team to provide the best accomodation for our students in the UK, so students can directly go to their accomodation after arrival. ",
+      "We do assist our students to find the appropriate accomodation before their arrival to the UK.",
   },
   {
     id: 6,
