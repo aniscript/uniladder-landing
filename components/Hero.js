@@ -36,7 +36,7 @@ const Hero = () => {
           </Link>
 
           <h5 className="py-5">
-            <span>2500+</span> students counselled
+            <span>5000+</span> students counselled
           </h5>
           <h5 className="pb-5">
             <span>100% visa success rate</span> for the last academic year
