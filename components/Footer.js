@@ -26,7 +26,7 @@ const Footer = () => {
               <ul className="social-icons">
                 <li>
                   <a
-                    href="https://www.facebook.com/uniladder.consultancy.1"
+                    href="https://www.facebook.com/studyintheuk111"
                     target="_blank"
                   >
                     <FaFacebook />
