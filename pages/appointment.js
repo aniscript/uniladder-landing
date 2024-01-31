@@ -47,37 +47,52 @@ const Appointment = () => {
           <div className="appointment-inner">
             <div className="contact-desc">
               <div className="contact-list flex flex-col md:items-center md:flex-row">
-                <FaEnvelope size={48} color="#00aff0" className="mr-4" />
-
-                <a href="mailto:receptionuniladder@gmail.com">
-                  <p>receptionuniladder@gmail.com</p>
-                </a>
-              </div>
-              <div className="contact-list flex flex-col md:items-center md:flex-row">
-                <FaPhone size={48} color="#00aff0" className="mr-4" />
                 <div>
-                  <a href="tel:+442080042071">
-                    <p>+442080042071</p>
-                  </a>
-                  <a href="tel:+9779808428046">
-                    <p>+9779808428046</p>
-                  </a>
-                  <a href="tel:+977015318783">
-                    <p>+977015318783</p>
-                  </a>
-                </div>
-              </div>
-              <div className="contact-list flex flex-col md:items-center md:flex-row">
-                <FaMapMarkerAlt size={48} color="#00aff0" className="mr-4" />
-                <div>
-                  <p>
-                    <span>Head Office:</span>
-                  </p>
-                  <p>Island Business Centre, Wellington Street, London</p>
-                  <p>
-                    <span>Nepal Contact Office:</span>
-                  </p>
-                  <p>Bagbazar, Kathmandu, Nepal</p>
+                  <div className="mb-2">
+                    <p>Head Office:</p>
+                    <p>
+                      <span>
+                        18-36 Island Business Center, <br />
+                        Room 225B Second Floor, <br />
+                        Block P Wellington Street, <br />
+                        London, SE18 6PF
+                      </span>
+                    </p>
+                    <h5>+442080042071</h5>
+                  </div>
+                  <div className="mb-2">
+                    <p>Kathmandu Office:</p>
+                    <p>
+                      <span>
+                        Hattisar Chowk, 4th Floor <br />
+                        Himalayan Pinewood Pvt Ltd Building <br />
+                        (Near Krishna pauroti)
+                      </span>
+                    </p>
+                    <h5>9818704046/015318783</h5>
+                    <h5>receptionuniladder@gmail.com</h5>
+                  </div>
+                  <div className="mb-2">
+                    <p>Butwal Office:</p>
+                    <p>
+                      <span>
+                        Devinagar, Siddhapath <br />
+                        Adjacent to New Horizon English Secondary School (+2
+                        Block)
+                        <br /> Butwal-11
+                      </span>
+                    </p>
+                    <h5>+071-420149</h5>
+                    <h5>butwaluniladder@gmail.com</h5>
+                  </div>
+                  <div className="mb-2">
+                    <p>Bangladesh Office:</p>
+                    <p>
+                      <span>Dhaka, Bangladesh</span>
+                    </p>
+                    <h5>+447949228752( whats App only)</h5>
+                    <h5>bangladesh@ukuniladder.com</h5>
+                  </div>
                 </div>
               </div>
               <div className="contact-list">

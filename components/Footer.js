@@ -1,19 +1,13 @@
 import Link from "next/link";
 import React from "react";
-import {
-  FaFacebook,
-  FaLinkedin,
-  FaMapMarkerAlt,
-  FaPhoneAlt,
-  FaYoutube,
-} from "react-icons/fa";
+import { FaFacebook, FaLinkedin, FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
   return (
     <div className="footer">
       <div className="footer-section">
         <div className="container mx-auto section">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
             <div className="footer-columns">
               <img
                 src="/assets/images/logo.png"
@@ -50,62 +44,48 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div className="footer-columns flex justify-start md:justify-center ">
-              <ul className="footer-list">
-                <li>
-                  <Link href="/about">
-                    <a>About Us </a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/services">
-                    <a>Our Services</a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/construction">
-                    <a>Universities</a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/sample">
-                    <a>Sample Documents</a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/appointment">
-                    <a>Contact</a>
-                  </Link>
-                </li>
-              </ul>
-            </div>
             <div className="footer-columns">
               <h5>Head Office</h5>
-              <div className="flex">
-                <FaMapMarkerAlt className="mr-3" size={24} color="#f96301" />
-                <p>Island Business Centre, Wellington Street, London</p>
-              </div>
-              <div className="flex">
-                <FaPhoneAlt className="mr-3" size={24} color="#f96301" />
-                <p>+442080042071</p>
-              </div>
+              <p>
+                18-36 Island Business Center, <br />
+                Room 225B Second Floor, <br />
+                Block P Wellington Street, <br />
+                London, SE18 6PF
+              </p>
+              <p>+442080042071</p>
+              <p>+447949228752(whatsApp only)</p>
             </div>
             <div className="footer-columns">
-              <h5>Nepal Office</h5>
-              <div className="flex">
-                <FaMapMarkerAlt className="mr-3" size={24} color="#f96301" />
-                <p>Bagbazar, Kathmandu, Nepal</p>
-              </div>
-              <div className="flex">
-                <FaPhoneAlt className="mr-3" size={24} color="#f96301" />
-                <p>+977015318783</p>
-              </div>
+              <h5>Kathmandu Office</h5>
+              <p>
+                Hattisar Chowk, 4th Floor <br />
+                Himalayan Pinewood Pvt Ltd Building <br />
+                (Near Krishna pauroti)
+              </p>
+              <p>9818704046/015318783</p>
+              <p>receptionuniladder@gmail.com</p>
+            </div>
+            <div className="footer-columns">
+              <h5>Butwal Office</h5>
+              <p>
+                Devinagar, Siddhapath <br />
+                Adjacent to New Horizon English Secondary School (+2 Block)
+                <br /> Butwal-11
+              </p>
+              <p>+071-420149</p>
+              <p>butwaluniladder@gmail.com</p>
+            </div>
+            <div className="footer-columns">
+              <h5>Bangladesh Office</h5>
+              <p>Dhaka, Bangladesh</p>
+              <p> +447949228752( whats App only)</p>
+              <p>bangladesh@ukuniladder.com</p>
             </div>
           </div>
         </div>
       </div>
       <div className="footer-bottom">
-        <p>Copyright 2022. Uniladder Consultancy Pvt. Ltd.</p>
+        <p>Copyright 2024. Uniladder Consultancy Pvt. Ltd.</p>
       </div>
     </div>
   );
